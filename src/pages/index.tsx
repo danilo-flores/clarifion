@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className={`flex flex-col items-center w-full ${inter.className}`}>
       <div className='flex justify-center w-full bg-[#252F3D]'>
-        <div className='container flex justify-between w-full p-4'>
+        <div className='w-[1280px] flex justify-between p-4'>
           {
             navbarConfig.map(item => (
               <div key={item.id} className='hidden md:flex justify-center items-center text-white '>
@@ -25,7 +25,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='container flex flex-col items-center justify-between w-full'>
+      <div className='w-[1280px] flex flex-col items-center justify-between'>
         <div className='flex justify-between items-center w-full py-8'>
           <Image alt='logo' src={'/images/logo.png'} width={192} height={36} />
 
@@ -94,6 +94,8 @@ export default function Home() {
               <span>ONE TIME ONLY</span> Special Price For 6 Extra Clarifion For Only <span>$14 Each</span> ($84.00 Total!)
             </h1>
 
+            <Image alt='banner' src={'/images/banner.png'} width={575} height={591} className='block md:hidden' />
+
             <div className='flex items-center w-full my-8'>
               <div className='flex items-center rounded-[8px] bg-blue-500'>
                 <Image alt='mobile' src={'/images/mobile.png'} width={134} height={134} />
@@ -142,7 +144,7 @@ export default function Home() {
               <p className='ml-4 [&>span]:text-blue-500'>Save <span>53%</span> and get <span>6 extra Clarifision</span> for only <span>$14 Each.</span></p>
             </div>
 
-            <button className='w-full p-4 rounded-full bg-green-600 font-bold text-white uppercase'>
+            <button className='w-full p-4 rounded-full bg-green-600 font-bold text-white uppercase transition hover:bg-green-700'>
               Yes - Claim my discount
             </button>
 
@@ -190,7 +192,7 @@ export default function Home() {
       </div>
 
       <div className='flex justify-center w-full bg-[#252F3D] text-gray-300'>
-        <div className='container flex flex-col md:flex-row justify-between items-center w-full md:p-8 text-sm md:text-base'>
+        <div className='w-[1280px] flex flex-col md:flex-row justify-between items-center md:p-8 text-sm md:text-base'>
           <div className='flex items-center mt-8 mb-4 md:m-0'>
             <p>Copyright (C) 2023</p>
             <span className='mx-4'>|</span>
